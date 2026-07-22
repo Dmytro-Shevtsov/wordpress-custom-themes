@@ -1,0 +1,14 @@
+<?php get_header(); ?>
+	<?php get_template_part('template-parts/hero'); ?>
+	<?php get_template_part('template-parts/poker-club'); ?>
+	<?php get_template_part('template-parts/poker-app'); ?>
+	<?php get_template_part('template-parts/poker-slider'); ?>
+	<?php get_template_part('template-parts/poker-games'); ?>
+	<?php get_template_part('template-parts/crazy-bonuses'); ?>
+	<?php get_template_part('template-parts/official-agent'); ?>
+	<?php get_template_part('template-parts/player-security'); ?>
+	<?php get_template_part('template-parts/poker-text'); ?>
+	<?php get_template_part('template-parts/pay-block'); ?>
+	<?php get_template_part('template-parts/poker-faq'); ?>
+	<?php get_template_part('template-parts/pre-footer'); ?>
+<?php get_footer(); ?>

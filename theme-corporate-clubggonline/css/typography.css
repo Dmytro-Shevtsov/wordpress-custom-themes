@@ -1,0 +1,176 @@
+/* Общие настройки шрифтов */
+.rubik-font, .open-sans-font {
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.rubik-font {
+    font-family: "Rubik", serif;
+}
+
+.open-sans-font {
+    font-family: "Open Sans", serif;
+}
+
+/* HEADLINES */
+.title-h2, .title-h3, .title-h4 {
+    font-weight: normal;
+    line-height: normal;
+}
+
+.title-h3 { /* Headline/H3/Desktop */
+    font-family: "Rubik", serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 150%;
+}
+
+.title-h2 { /* Headline/H1/Desktop */
+    font-family: "Open Sans", serif;
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 110%;
+    color: #FFE8A3;
+}
+
+.title-h4 { /* Headline/H2 */
+    font-family: "Rubik", serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 120%;
+    color: #FFE8A3;
+}
+
+/* BODY TEXT */
+.body-large, .body-medium, .body-small {
+    font-family: "Rubik", serif;
+}
+
+.body-large { /* Body/Large/Desktop */
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 160%;
+}
+
+.body-medium { /* Body/Medium */
+    font-family: "Open Sans", serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 160%;
+}
+
+.body-small { /* Body/Small/Smil */
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+/* COLORS */
+.fc-yellow { color: #FFE8A3; }
+.fc-white { color: #FFF; }
+.fc-black { color: #000; }
+
+
+
+/* BUTTONS */
+/* Общие стили кнопок */
+.button-common {
+  font-family: "Rubik", serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 1rem;
+}
+
+/* Изображения в кнопках */
+.buttons img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Button Green Border */
+.button-green-border {
+  font-family: "Rubik", serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 1rem;
+  color: #000;
+  padding: 3px;
+  border: 2px solid #73F038;
+}
+
+.button-green-border span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 15px 18px;
+  background-color: #73F038;
+  border-radius: 12px;
+  transition: all 0.3s;
+
+
+}
+.button-green-border:hover span {
+  background-color: #43D200;
+}
+
+/* Buttons Transparent */
+.buttons-transparent {
+  font-family: "Rubik", serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 1rem;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #35FF03;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 17px 20px;
+}
+.buttons-transparent:hover {
+  background-color: #082900;
+}
+
+/* Button Blue Border */
+.button-blue-border {
+  font-family: "Rubik", serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 1rem;
+  color: #fff;
+  border: 2px solid #0047CB;
+}
+.button-blue-border span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 18px;
+  background-color: #0076FC;
+  border-radius: 12px;
+  transition: all 0.3s;
+  border: 2px solid #fff;
+}
+.button-blue-border:hover span {
+  background-color: #0047CB;
+}
+
+/* Button Green */
+.button-green {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  color: #000;
+  background-color: #73F038;
+  font-family: "Rubik", serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+.button-green:hover {
+  background-color: #43D200;
+}

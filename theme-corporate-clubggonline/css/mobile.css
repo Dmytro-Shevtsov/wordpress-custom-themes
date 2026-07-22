@@ -1,0 +1,342 @@
+/* Ноутбуки и маленькие десктопы экраны до 1440px */
+@media (max-width: 1440px) {  
+    /* HERO - menu */
+	.container {padding: 0 1rem;}
+	.body-large {font-size: 22px;}
+	.poker-club-star img {width: 60px; height: 60px;}
+	.poker-club-star {gap: 1.5rem;}
+	/* player-security */
+	.player-security-img img {max-width: 550px;}
+}
+
+@media (max-width: 1280px) { 
+	/* about-block-3 */
+	.about-block-3-title {font-size: 92px; padding-top: 130px;}
+	.block-3-img {left: calc(50% - 300px); top: calc(50% - 290px);}
+	.block-3-img img {width: 600px; height: auto;}
+	.about-block-3-wr .title-h2 {font-size: 58px;}
+	.block-3-right {width: 260px;}
+	.block-3-left {width: 290px;}
+	.about-block-3 {padding: 220px 0 50px;}
+	.hero-friends-title .title-h2 {max-width: 690px;}
+}
+
+/* Планшеты в альбомной ориентации, экраны до 1200px */
+@media (max-width: 1200px) {  
+    /* HERO - menu */
+	.title-hero-img img {max-height: 84px;}
+	.header-menu {gap: .7rem;}
+	.title-h3 {font-size: 26px;}
+	/* poker-club */
+	.body-large {font-size: 20px;}
+	.poker-club-star img {width: 50px; height: 60px;}
+	.poker-club-star {gap: 1rem;}
+	/* crazy-bonuses */
+	.crazy-bonuses-cards img {max-width: 300px; height: auto;}
+	.crazy-bonuses-flag img {max-width: 500px; height: auto;}
+	/* player-security */
+	.player-security-img img {max-width: 450px;}
+	.player-security-in {gap: 60px; margin-bottom: 40px;}
+	/* pre-footer */
+	.pre-footer-in-buttons {flex-direction: column-reverse;}
+	.pre-footer-in-buttons .button-green-border {width: 100%;}
+	.pre-footer-in-buttons .button-green-border span {width: 100%;}
+	.pre-footer-in-buttons .button-blue-border {width: 100%;}
+	.pre-footer-in-buttons .button-blue-border span {width: 100%;}
+	/* footer */
+	.footer-left {max-width: 400px;}
+	/* pay-wrap */
+	.pay-wrap {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 5rem;
+		column-gap: 2rem;
+		grid-template-areas:
+		"a b"
+		"c d"
+		"e f";}
+	/* about-us */
+	.hero-page-in img {width: 100%; height: auto;}
+	.hero-page-img::before {width: 700px; height: 580px; top: -180px; left: -100px;}
+	/* guide */
+	.hero-guide-img img {width: 100%; height: auto;}
+	.hero-guide-img::before {top: -250px; left: -130px;}
+	.guide-content-img {flex-wrap: wrap;}
+}
+
+/* Планшеты экраны до 1024px  */
+@media (max-width: 1024px) {  
+    /* HERO - menu */
+	.header-button, .header-nav {display: none;}
+	.header-wr {padding: 1.5rem 1.5rem;}
+	.title-hero-img img {max-height: 64px;}
+	.title-h3 {font-size: 24px;}
+	.m-munu-btn {display: flex;}
+	.header-wr {flex-direction: column; align-items: flex-start; gap: 32px; position: relative; height: 76px;}
+	.m-munu-btn {position: absolute; left: 24px; z-index: 2;}
+	.header-menu {flex-direction: column; align-items: flex-start;}
+	.header-wr-visible {height: calc(95vh - 60px);}
+	.header-wr:has(.header-wr-clos) .header-nav, .header-wr:has(.header-wr-clos) .header-button {display: block;}
+	.header-menu li img {display: block;}
+
+	/* poker-club */
+	.title-h2 {font-size: 54px;}
+	.poker-club-star img {width: 40px; height: 40px;}
+	.poker-club-star {gap: 1rem;}
+	.poker-club {background-size: cover;}
+	/* poker-app */
+	.poker-app-wr {grid-template-columns: 1fr 1fr;
+		max-width: 760px;
+		grid-template-areas:
+		"a b"
+		"c d"
+		"e f";}
+	/* crazy-bonuses */
+	.crazy-bonuses-cards img {max-width: 280px; height: auto;}
+	.crazy-bonuses-flag img {max-width: 450px; height: auto;}
+	.crazy-bonuses-logo img {max-width: 280px; height: auto;}
+	.bonus-card-20 {margin-right: -90px; transform: rotate(-10deg); margin-bottom: -300px; }
+	.bonus-card-100 {margin-left: -90px; transform: rotate(10deg); margin-bottom: -300px; }
+	/* player-security */
+	.player-security-img img {max-width: 100%; width: 100%;}
+	.player-security-in {gap: 60px; margin-bottom: 40px; flex-direction: column;}
+	/* footer */
+	.footer-left {max-width: 300px;}
+	.footer-menu-list {gap: 8px;}
+	.footer-soc-list {gap: 40px;}
+	/* about-us */
+	.hero-page-in {width: auto;}
+	/* about-block-3 */
+	.about-block-3-title {font-size: 68px; padding-top: 100px;}
+	.block-3-img {left: calc(50% - 200px); top: calc(50% - 200px);}
+	.block-3-img img {width: 400px; height: auto;}
+	.about-block-3-wr .title-h2 {font-size: 52px;}
+	.block-3-right {width: 220px;}
+	.block-3-left {width: 240px;}
+	.about-block-3 {padding: 140px 0 30px;}
+	/* guide */
+	.guide-content-img {gap: 32px;}
+	/* contact*/
+	.contacts-page-wr {flex-direction: column-reverse; gap: 50px;}
+	.hero-contacts-in {width: 100%;}
+	.hero-contacts-img {text-align: center;}
+	/* friends*/
+	.hero-friends {padding: 230px 0 100px; background-size: contain;}
+	.friends-content-wr {flex-direction: column-reverse;}
+	.friends-content-in {width: 100%;}
+	.friends-content-title {font-size: 24px;}
+	.official-friend-agent {padding: 0 0 50px 0!important;}
+	.agent-frands h2 {font-size: 24px; margin-bottom: 48px; padding: 0 20px;}
+}
+@media (max-width: 820px) {
+	/* about-us */
+	.hero-page-in {width: auto;}
+	.hero-page-wr {flex-direction: column-reverse;}
+	.hero-page-in {width: 100%; display: flex; justify-content: center;}
+	.hero-page-img {margin-top: -60px; margin-bottom: 30px;}
+	.hero-about {height: auto; padding-bottom: 50px;}
+	/* about-block-3 */
+	.about-block-3-title {font-size: 68px; padding-top: 100px;}
+	.block-3-img {left: calc(50% - 200px); top: calc(50% - 200px);}
+	.block-3-img img {width: 400px; height: auto;}
+	.about-block-3-wr .title-h2 {font-size: 52px;}
+	.block-3-right {width: 220px;}
+	.block-3-left {width: 240px;}
+	.about-block-3 {padding: 140px 0 30px;}
+	/* guide */
+	.hero-guide-img {margin-bottom: 40px;}
+	.hero-guide-img::before {top: -250px; left: 0px;}
+	.guide-page-wr {flex-direction: column-reverse;}
+	.hero-guide-in {width: 100%;}
+	/* about */
+	.about-cont-wr {flex-direction: column;}
+}
+/* Смартфоны в ландшафтной ориентации экраны до 768px */
+@media (max-width: 768px) {  
+    /* HERO - menu */
+	.videobg {display: none;}
+	.title-hero-img img {max-height: 44px;}
+	.hero-wrap {padding-left: 0; padding-right: 0; gap: 36px;}
+	.hero-title {width: 100%}
+	.header-button a {width: 250px;}
+	/* poker-club */
+	.title-h2 {font-size: 40px; line-height: 130%;}
+	.poker-club-star {flex-direction: column-reverse; gap: .5rem;}
+	.poker-club {padding: 32px 0 32px;}
+	/* poker-app */
+	.poker-app-wr {grid-template-columns: 1fr 1fr; max-width: 560px;}
+	.body-medium {font-size: 16px;}
+	.poker-app-in-blure {padding: 6rem 2rem 4rem;}
+	.poker-app-title {margin-bottom: 8rem;}
+	.poker-app {padding: 7rem 0;}
+	/* crazy-bonuses */
+	.crazy-bonuses-descr {text-align: center;}
+	.crazy-bonuses-cards {flex-direction: column-reverse;}
+	.crazy-bonuses-cards img {max-width: 330px; height: auto;}
+	.crazy-bonuses-flag img {max-width: 450px; height: auto;}
+	.crazy-bonuses-logo img {max-width: 280px; height: auto;}
+	.bonus-card-20 {margin-right: auto; transform: rotate(-5deg); margin-bottom: -20px; }
+	.bonus-card-100 {margin-right: auto; margin-left: auto; transform: rotate(-5deg); margin-bottom: 0px; }
+	.bonus-card-50 {margin-left: auto; transform: rotate(5deg); margin-bottom: -20px; }
+	/* official-agent */
+	.official-agent {padding: 40px 0 0;}
+	.official-agent-wr {padding: 32px 16px; grid-gap: 0; grid-template-columns: 1fr; border-radius: 0;}
+	.official-agent-wr::before {content: none;}
+	.official-agent .container {padding: 0;}
+	.official-agent {overflow: hidden;}
+	/* player-security */
+	.player-security {padding: 40px 0 40px;}
+	.player-security-in {gap: 32px;}
+	/* pre-footer */
+	.pre-footer {padding: 0;}
+	.pre-footer-wr {padding: 50px 0; flex-direction: column; align-items: flex-start; gap: 10px;}
+	/* footer */
+	.footer-left {max-width: 300px;}
+	.footer-menu-list {gap: 20px;}
+	.footer-soc-list {gap: 40px;}
+	.footer-wr {flex-direction: column; padding-bottom: 70px;}
+	/* pay */
+	.pay-wrap {
+		grid-template-columns: 1fr;
+		grid-gap: 3rem;
+		column-gap: 0rem;
+		grid-template-areas:
+		"c"
+		"b"
+		"a"
+		"f"
+		"e"
+		"d";}
+	.pay-in {max-width: 100%;}
+	.pay-block {padding: 30px 0 60px;}
+	.pay-container {gap: 70px;}
+	/* about-block-3 */
+	.about-block-3-title {font-size: 48px; padding-top: 100px;}
+	.block-3-img {left: calc(50% - 150px); top: calc(50% - 150px);}
+	.block-3-img img {width: 300px; height: auto;}
+	.about-block-3-wr .title-h2 {font-size: 40px; line-height: 120%;}
+	.block-3-right {width: 170px;}
+	.block-3-left {width: 180px;}
+	.about-block-3 {padding: 140px 0 30px;}
+	/* guide */
+	.hero-guide-img::before {width: 500px; height: 563px; top: -180px; left: -80px;}
+	.guide-content-title {font-size: 36px;}
+}
+
+/* Смартфоны в портретной ориентации экраны до 576px */
+@media (max-width: 576px) {  
+    /* HERO - menu */
+	.title-h3 {font-size: 22px; line-height: 29px;}
+	.title-hero-img {flex-direction: column-reverse;}
+	.title-hero-img img {max-height: 40px;}
+	.hero-wrap {gap: 32px; padding-top: 60px;}
+	.buttons-transparent {padding: 17px 18px; width: 300px;}
+	.hero-buttons {flex-direction: column; gap: 1rem;}
+	.button-green-border span {padding: 15px 16px; width: 300px;}
+	.button-blue-border span {padding: 15px 16px; width: 300px;}
+	.header-button {width: 100%;}
+	.header-button a {width: 100%;}
+	/* poker-club */
+	.title-h2 {font-size: 33px;}
+	.body-large {font-size: 18px;}
+	.poker-club-star img {width: 32px; height: 32px;}
+	.poker-club-buttons {flex-direction: column; gap: 1rem;}
+	.poker-club-buttons buttons {width: 300px;}
+	.poker-club-buttons buttons span {width: 100%;}
+	.poker-club-wr {gap: 2rem;}
+	/* poker-app */
+	.poker-app-wr {
+	grid-template-columns: 1fr;
+	max-width: 400px;
+	grid-gap: 6rem;
+	grid-template-areas:
+        "c" 
+        "b" 
+        "a" 
+        "f" 
+        "e" 
+        "d";
+	}
+	.body-medium {font-size: 16px;}
+	.poker-app-in-blure {padding: 6rem 2rem 4rem;}
+	.poker-app-img img{width:140px ; height: auto;}
+	.poker-app {padding: 5rem 0;}
+
+	/* crazy-bonuses */
+	.crazy-bonuses-cards img {max-width: 280px; height: auto;}
+	.crazy-bonuses-flag img {max-width: 350px; height: auto;}
+	.crazy-bonuses-flag {margin-bottom: 20px;}
+	.crazy-bonuses-logo img {max-width: 200px; height: auto;}
+	.crazy-bonuses-logo {margin-bottom: 20px;}
+	.crazy-bonuses-descr {margin-bottom: 40px;}
+	.bonus-card-20 {margin-right: auto; transform: rotate(-5deg); margin-bottom: -20px; }
+	.bonus-card-100 {margin-right: auto; margin-left: auto; transform: rotate(-5deg); margin-bottom: 0px; }
+	.bonus-card-50 {margin-left: auto; transform: rotate(5deg); margin-bottom: -20px; }
+	.crazy-bonuses {padding: 4rem 0;}
+	/* pre-footer */
+	.pre-footer-in {gap: 10px;}
+	.pre-footer-img img {max-width: 60px;}
+	.pre-footer-in-mail a {font-size: 20px; line-height: 22px;}
+	/* footer */
+	.footer-menu-list {gap: 0px; flex-direction: column-reverse;}
+	.footer-left {max-width: 100%; margin-bottom: 30px; padding-right: 10px;}
+	.footer-soc-list {gap: 20px; flex-direction: column-reverse; align-items: flex-start; padding-right: 0;}
+	.footer-soc-list li {direction: ltr;}
+	.footer-copyright{flex-direction: column-reverse; align-items: flex-start;}
+	/* about-us */
+	.hero-page-img {margin-top: -40px;}
+	.hero-page-title {justify-content: flex-start;}
+	.about-cont-wr {gap: 40px;}
+	.about-cont-img img {width: 200px; height: 200px;}
+	.about-cont-trxt {font-size: 24px; line-height: 130%;}
+	/* about-block-3 */
+	.about-block-3-title {font-size: 60px; padding-top: 15px; line-height: 110%; text-align:center;}
+	.block-3-img {width: 344px; height: 320px; display: none;}
+	.block-3-img img {display: none;}
+	.about-block-3-wr {flex-direction: column-reverse; gap: 20px; padding-top: 500px;}
+	.about-block-3-wr .title-h2 {font-size: 32px; line-height: 120%;}
+	.block-3-right, .block-3-left {width: 100%; text-align: center;}
+	.about-block-3 {padding: 0px 0 150px; background: url('/wp-content/uploads/2025/02/bg_block-3-bottom_about-us_mobile.webp') no-repeat;
+    background-size: cover; background-position: top center;}
+	/* guide */
+	.guide-content-title {font-size: 24px;}
+	.guide-pre-footer-text ul {padding-right: 30px;}
+	.guide-content-img  {gap: 24px;}
+	.guide-content-img img  {width: 160px;}
+	/* contact*/
+	.hero-contacts-img img {width: 90%; height: auto;}
+	.hero-contacts {padding-top: 200px;}
+	.cont-buttons {flex-direction: column-reverse;}
+	/* friends*/
+	.hero-friends {padding: 190px 0 50px; background-size: contain;}
+	/* button whatsapp */
+	.bb-whatsapp a span {width: 300px;}
+	.bb-whatsapp {width: calc(100% - 40px); text-align: center;}
+}
+
+@media (max-width: 500px) {
+	.about-block-3-wr {padding-top: 440px;}
+	.about-block-3 {padding: 0px 0 70px;}
+	.hero-friends {padding: 290px 0 50px; background-size: cover; background-position: -50px -60px;}
+	/* guide */
+	.guide-content-img  {gap: 16px;}
+	.guide-content-img img  {width: 150px;}
+	/* poker-app */
+	.poker-app-in-blure {padding: 52px 26px 52px;}
+	.poker-app-wr {max-width: 290px;}
+	/* button-up */
+	.button-up {bottom: 90px;}
+	
+@media (max-width: 450px) {
+	.about-block-3-wr {padding-top: 350px;}
+	/* pre-footer */
+	.pre-footer-in-buttons {flex-direction: column-reverse; width: 100%;}
+	.button-blue-border {width: 338px;}
+	.button-blue-border span {width: 100%;}
+	.button-green-border {width: 338px;}
+	.button-green-border span {width: 100%;}
+	.bb-whatsapp a span {width: 100%;}
+	.buttons-transparent {width: 338px;}
+	/* hero */
+	.hero {height: auto;}
+	.hero-content > .container {padding-top: 90px; padding-bottom: 30px;}
+}

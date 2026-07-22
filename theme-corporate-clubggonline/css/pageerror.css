@@ -1,0 +1,41 @@
+body.error404 {
+	display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.page-error {
+    flex: 1; 
+}
+.page-error {
+	position: relative;
+	padding-top: 160px;
+	background: linear-gradient(180deg, rgba(19, 19, 19, 1) 0%, rgba(24, 24, 24, 1) 39%, rgba(0, 0, 0, 1)) 100%; 
+}
+.page-error::before {
+	content: "";
+    position: absolute;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: url('../images/bg/bg_page.webp') no-repeat; 
+	background-size: cover;
+}
+
+.page-error-content {
+	display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+	position: relative;
+	z-index: 2;
+}
+.page-error-content h1 {
+	margin-bottom: 60px;
+}
+
+.page-error-content .button-green-border span {
+    padding: 18px 50px;
+}

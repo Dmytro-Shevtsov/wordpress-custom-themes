@@ -1,0 +1,282 @@
+/* HEADER STYLES */
+.header {
+    padding: 2rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 0.3s;
+}
+
+.header-wr {
+    position: relative; /* Для псевдоэлемента */
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+}
+
+.header-wr::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(90deg, #09005A, #8A6D03, #45004E);
+    -webkit-mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    mask: linear-gradient(white 0 0) content-box, linear-gradient(white 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+
+.logo a {
+    color: #FFCB00;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #FFF;
+}
+
+/* MENU */
+.no-scroll {
+    overflow: hidden;
+    height: 100vh; /* Защита от сдвига контента при отключении прокрутки */
+}
+
+.header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.header-menu li a {
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 160%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+}
+
+.header-menu li a:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: #FFCB00;
+}
+
+.header-menu .current-menu-item a {
+    color: #FFCB00;
+}
+
+/* Кнопка мобильного меню */
+.m-munu-btn {
+    display: none; /* Показать через медиазапросы для мобильных */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 1px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+}
+
+.m-munu-btn span {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    width: 24px;
+    height: 2px;
+}
+
+.m-munu-btn span::before,
+.m-munu-btn span::after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    width: 24px;
+    height: 2px;
+}
+
+.m-munu-btn span::before {
+    top: -8px;
+    left: 0;
+}
+
+.m-munu-btn span::after {
+    bottom: -8px;
+    left: 0;
+}
+
+/* Стили для переключателя меню (закрытый вид) */
+.header-wr-clos span {
+    display: block;
+    position: relative;
+    background-color: #fff;
+    width: 24px;
+    height: 0;
+}
+
+.header-wr-clos span::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    transform: rotate(45deg);
+}
+
+.header-wr-clos span::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+/* Прячем изображения в меню, если они есть */
+.header-menu li img {
+    display: none;
+}
+
+
+/* HERO STYLES */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+
+.hero .hero-content {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.hero .hero-content::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url('../images/bg/bg_block_hero.webp') no-repeat;
+    background-size: cover;
+}
+
+.hero-content > .container {
+    height: 100%;
+    position: relative;
+    z-index: 3;
+	padding-top: 120px;
+}
+
+.hero-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 1300px;
+    width: 100%;
+    gap: 48px;
+}
+
+.title-hero {
+    margin: 0 0 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 120px;
+    line-height: 140px;
+    text-transform: uppercase;
+    color: #FFCB00;
+}
+.hero-title-sm-logo {
+	text-align: center;
+	margin-bottom: 32px;
+}
+.title-hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.hero-descr p {
+    text-align: center;
+	margin: 0;
+}
+.hero-descr strong {
+    font-weight: 800;
+    border-bottom: 1px solid #FFE8A3;
+}
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+
+/* SEPARATE BLOCK */
+.separate-block {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    width: 100%;
+    direction: ltr;
+}
+
+.separate-block::before,
+.separate-block::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 240, 24, 0) 0%, rgba(255, 240, 24, 1) 100%);
+}
+
+.separate-block::after {
+    background: linear-gradient(90deg, rgba(255, 240, 24, 1) 0%, rgba(255, 240, 24, 0) 100%);
+}
+
+.separate-block img {
+    display: block;
+    width: 144px;
+}

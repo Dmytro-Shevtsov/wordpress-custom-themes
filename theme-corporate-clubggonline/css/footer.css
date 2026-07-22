@@ -1,0 +1,137 @@
+/* PREFOOTER */
+.pre-footer {
+	padding: 73px 0;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(23, 22, 22, .75) 50%, rgba(0, 0, 0, 1)) 100%; 
+}
+.pre-footer-container {}
+.pre-footer-wr {
+	max-width: 1200px;
+	padding: 110px 0;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.pre-footer-in {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+}
+.pre-footer-cont {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	text-align: right;
+}
+.pre-footer-cont a {color: #FFE8A3;}
+.pre-footer-cont a:hover {color: #FFCB00;}
+.separate-block-prefut {gap: 0px;}
+
+/* FOOTER */
+.footer {
+	padding: 60px 0 0;
+	background-color: #000;
+}
+.footer-wr {
+	padding-bottom: 120px;
+	display: flex;
+	justify-content: space-between;
+}
+.footer-menu-title {
+	padding: 0 15px;
+}
+.footer-right {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+.footer-menu-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	gap: 30px;
+}
+.footer-menu-list a {
+	color: #959595;
+	padding: 12px 15px;
+}
+.footer-menu-list a:hover {color: #FFCB00;}
+.footer-soc-list {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	gap: 60px;
+	padding-right: 15px;
+}
+.footer-soc-list a {color: #fff;}
+.footer-soc-list a:hover {color: #FFCB00;}
+.footer-soc-list li {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.footer-left {
+	max-width: 575px;
+}
+.footer-logo {
+    color: #FFCB00;
+    font-family: "Open Sans", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 160%;
+	margin-bottom: 24px;
+}
+.footer-copyright {
+	border-top: 1px solid rgba(255,255,255,.16);
+	padding: 44px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: #959595;
+}
+.footer-copyright a {color: #959595;}
+.footer-copyright a:hover {color: #FFCB00;}
+
+
+/* FOOTER BUTTON */
+.bb-whatsapp {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	z-index: 10;
+}
+.bb-whatsapp.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.button-up {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 99; /* чтобы кнопка была поверх */
+}
+.button-up a:hover {
+    margin-top: -10px;
+	transition: all 3s;
+}
+.button-up a {
+    padding: 0;
+    margin: 0;
+	display: flex;
+}
+.button-up.visible {
+    opacity: 1;
+    visibility: visible;
+}

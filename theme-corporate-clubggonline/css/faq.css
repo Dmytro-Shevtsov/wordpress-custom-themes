@@ -1,0 +1,84 @@
+.poker-faq  {
+    background: url('../images/bg/bg_block_8.webp') no-repeat #020203;
+    background-size: cover;
+    padding: 40px 0 0;
+}
+.poker-faq-title {
+	text-align: center;
+	margin-bottom: 100px;
+}
+.faq {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.faq-item {
+    border-bottom: 1px solid rgba(255,255,255,.2);
+    padding: 10px 0;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    gap: 15px;
+	justify-content: space-between;
+}
+
+.span-faq-icon {
+	display: block;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+	background: url('../images/icon/akk-pl.png') no-repeat; 
+	background-size: 100%;
+}
+.faq-item.active .span-faq-icon {
+	background: url('../images/icon/akk-min.png') no-repeat; 
+	background-size: 100%;
+}
+
+.faq-title {
+	width: calc(100% - 55px);
+	font-family: "Rubik", serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 150%;
+	color: #fff;
+	text-align: right;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #fff;
+}
+.faq-item.active .faq-answer {
+    max-height: 500px; 
+    padding: 10px;
+}
+.faq-item.active .faq-title {
+	color: #FFE8A3;
+}
+
+
+
+
+@media (max-width: 576px) { 
+.poker-faq-title {margin-bottom: 40px;}
+}
+@media (max-width: 450px) {
+	.faq-title {font-size: 22px;}
+	.faq-answer {font-size: 14px;}
+}
+
+
+

@@ -1,0 +1,47 @@
+/* GLOBAL STYLES */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+html, *, *::after, *::before {
+    box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: "Rubik", serif;
+    font-size: 1rem;
+    line-height: 140%;
+    font-weight: 300;
+    color: #fff;
+    background-color: #000;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+input, select {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+b {
+    font-weight: 500;
+}
+
+.container {
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 .25rem;
+    position: relative;
+}
