@@ -1,0 +1,541 @@
+/*
+Theme Name: Sakti
+Theme URI:
+Description: сайт для компании sakti.dp.ua
+Version: 1.1.1
+Author: Dmitry Shevtsov
+Author URI: https://webprofy.dp.ua
+*/
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&subset=cyrillic');
+html,
+body{height:100%;}
+body{
+	background:#fff;
+	font-family:'PT Sans', sans-serif;
+	font-size:18px;
+	font-weight:300;
+	background-image:url(images/bg.jpg);
+	background-repeat:repeat;
+	}
+section{position:relative;}
+*{outline:none !important;}
+a{text-decoration:none;}
+
+.btn{
+	font-size:24px;color:#000;
+	height:42px;
+	line-height:42px;
+	padding:0 25px;
+	display:inline-block;
+	transition-duration:.3s;
+	border:1px solid #f00;
+	text-decoration:none;
+	}
+.btn:hover,
+.btn:active{
+	background-color:#f00;
+	text-decoration:none;
+	color:#fff;
+	opacity:.75;
+	}
+
+.zagolov{
+	color:#d02020;
+	font-size:26px;
+	text-transform:uppercase;
+	margin:40px 0 10px;
+	font-weight:300;
+	}
+
+
+/* header */
+.header{
+	background-image: linear-gradient(to left,rgba(165,180,200,1),rgba(255,255,255,1),rgba(165,180,200,1));
+}
+.col-logo img{
+	width: 105%;
+	height: auto;
+	margin-top: 10px;
+}
+.col-hcont{position: relative; padding-left: 15px;}
+.tel-head {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.tel-head li{
+	list-style-type: none;
+	font-size: 18px;
+	float: left;
+	margin: 5px 40px 5px 0;
+	font-weight: bold;
+}
+.tel-head li a{
+	color: #333;
+	text-decoration: none;
+}
+.tel-head li a:hover{
+	color: #333;
+	text-decoration: none;
+}
+.tel-head .fa-phone{
+	font-size: 19px;
+	margin-right: 3px;
+}
+.h-al{
+	width:80%;
+	background-color: #e31e25;
+	color: #fff;
+	font-size: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+	height: 56px;
+	line-height: 56px;
+	text-align: left;
+	padding-left:40px;
+	margin: 0;
+}
+.h-ob{
+	color: #e31e25;
+	font-size: 24px;
+	text-transform: uppercase;
+	margin: 5px 0;
+}
+.h-ob span{
+	color: #333;
+	font-size: 22px;
+	text-transform: none;
+	font-style: italic;
+}
+.h-prof{
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	width: 390px;
+}
+nav{
+	background-color: #94c0b4;
+	box-shadow: 0 0 10px rgba(0,26,16,.25);
+}
+.menu{
+	margin: 0; 
+	padding: 0;
+	display: flex;
+}
+.menu li{list-style-type: none; margin: 0; padding: 0; text-align: center;}
+nav a{
+	font-size: 18px;
+	color: #012d24;
+	text-transform: uppercase;
+	display: inline-block;
+	height: 56px;
+	line-height: 56px;
+	padding: 0 20px;
+	transition-duration:.3s;
+}
+nav a:hover{
+	font-size: 18px;
+	color: #012d24;
+	background-color: #7da89d;
+	text-decoration: none;
+}
+nav .current-menu-item a{
+	font-size: 18px;
+	color: #fff;
+	background-color: #7da89d;
+	text-decoration: none;
+}
+
+
+/* slider */
+.slider {margin-bottom:50px;}
+.metaslider .flex-control-nav {
+    bottom: 50px!important;
+}
+.flex-control-paging li a {
+    width: 20px!important;
+	background: rgba(255, 255, 255, .5)!important;
+}
+.flex-control-paging li a.flex-active{
+	background: rgba(255, 255, 255, .95)!important;
+}
+
+
+/* services */
+.col-post{margin-bottom: 30px;}
+.col-post-zag{
+	font-size: 25px;
+	color: #333;
+	text-transform: uppercase;
+	padding: 25px 0 10px;
+	display: inline-block;
+}
+.col-post-zag:hover{
+	color: #012d24;
+	text-decoration: none;
+}
+.col-post-cit{
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	line-height: 22px;
+	text-align: justify;
+}
+.col-post-btn{
+	display: block;
+	height: 58px;
+	width: 225px;
+	line-height: 58px;
+	font-size: 20px;
+	color: #012d24;
+	text-transform: uppercase;
+	padding-left: 23px;
+	border: 1px solid #94c0b4;
+	position: relative;
+	margin-top: 20px;
+	transition-duration:.3s;
+}
+.col-post-btn:hover{
+	background-color: #94c0b4;
+	color: #fff;
+	text-decoration: none;
+}
+.col-post-btn span{
+	display: inline-block;
+	height: 56px;
+	width: 56px;
+	background-color: #94c0b4;
+	background-image:url(images/span-bg.png);
+	background-repeat:no-repeat;
+	background-position: center center;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+
+/* kompany */
+.kompany h1, .h1-page{
+	font-size: 42px;
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+}
+.kompany p{
+	text-align: justify;
+}
+.page-kompany ol li{
+	font-weight: bold;
+}
+.page-kompany ol li ul li{
+	font-weight: normal;
+	list-style-type: none;
+}
+
+/* контакты */
+.col-contact ul{margin: 0; padding: 0;}
+.col-contact ul li{list-style-type: none;}
+.col-contact a, .col-contact i.fa{color: #5f6ba5; margin-right: 5px;}
+
+/* новости */
+.col-post-news-img img{
+	width: 100%;
+	height: auto;
+}
+.post-zag-news{
+	padding: 0;
+	margin: 0;
+}
+.blog-span{font-size: 14px; color: #777;}
+.col-post-cit-news p{margin: 5px 0;}
+
+
+
+
+/* footer */
+.footer{
+	background-color: #c4dcd6;
+	padding: 35px 0 0 0;
+	margin-top: 50px;
+}
+.footer ul{margin: 0; padding: 0;}
+.footer ul li{list-style-type: none;}
+.footer a, .footer i.fa{color: #5f6ba5; margin-right: 5px;}
+
+.menu-foot-p{
+	font-size: 24px;
+	color: #5f6ba5;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 0 0 20px 0;
+}
+.copyr{
+	font-size: 14px;
+	color: #5f6ba5;
+	text-align: center;
+}
+.copyr-wp-wr {
+    padding: 20px 0;
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.copyr-wp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    font-size: 14px;
+    border-top: 1px solid #5f6ba5;
+    color: #5f6ba5;
+    margin-left: 15px;
+    margin-right: 15px;
+	padding-top: 20px;
+}
+.copyr-wp p{
+    margin-bottom: 0px;
+}
+
+.logo-foot{margin-top: 30px;}
+.cont-foot{padding-left:185px;}
+.footer-contact{
+	background-color: #c4dcd6;
+	margin-top: 50px;
+}
+.copyr-contact{
+	font-size: 14px;
+	padding: 20px 0;
+	color: #5f6ba5;
+	text-align: center;
+}
+
+
+/* табы */
+.su-tabs-pane{padding:0px!important;background:none!important;}
+.su-tabs{padding:0px!important;background:none!important;}
+.su-tabs-nav span{border-radius:0px!important;color:#000!important;text-transform:uppercase;border:1px solid #94c0b4!important;font-size:16px;line-height:20px;margin-right:3px;min-height:40px;padding:10px 15px;transition:all 0.2s ease 0s;}
+.su-tabs-nav span:hover{color:#94c0b4!important;}
+.su-tabs-nav span.su-tabs-current{background:#94c0b4 none repeat scroll 0 0!important;color:#fff!important; margin-bottom: 5px;}
+
+.ngg-gallery-thumbnail {
+    text-align: center;
+    max-width: 100%!important;
+    background-color: #FFF;
+    border: 1px solid #94c0b4;
+    margin: 5px;
+}
+
+.ul-tabs {
+	margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+	flex-wrap: wrap;
+}
+.ul-tabs li{
+	margin: 0 5px 5px 0;
+}
+.ul-tabs li a {
+	display: inline-block;
+    border: 1px solid #94c0b4;
+    padding: 10px 15px;
+    color: #000;
+	text-decoration: none;
+}
+.ul-tabs .ui-state-active a {
+    background-color: #94c0b4;
+    color: #fff;
+}
+
+
+/* выравнивание картинок */
+.alignleft{display:inline;float:left;}
+.alignright{display:inline;float:right;}
+.aligncenter{display:block;margin-right:auto;margin-left:auto;}
+blockquote.alignleft,
+.wp-caption.alignleft,
+img.alignleft{margin:0.4em 1.6em 1.6em 0;}
+blockquote.alignright,
+.wp-caption.alignright,
+img.alignright{margin:0.4em 0 1.6em 1.6em;}
+blockquote.aligncenter,
+.wp-caption.aligncenter,
+img.aligncenter{clear:both;margin-top:0.4em;margin-bottom:1.6em;}
+.wp-caption.alignleft,
+.wp-caption.alignright,
+.wp-caption.aligncenter{margin-bottom:1.2em;}
+
+
+/* формы */
+input[type="text"], input[type="password"], input[type="date"], nput[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"]{background-color:#fafafa;border:1px solid #979797;box-shadow:0 1px 2px rgba(0, 0, 0, 0.1) inset;color:rgba(0, 0, 0, 0.99);display:block;font-family:inherit;font-size:1em;margin:0 0 0;padding:0.5em;transition:box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s;width:100%;}
+select.wpcf7-select{background-color:#fafafa;border:1px solid #979797;box-shadow:0 1px 2px rgba(0, 0, 0, 0.1) inset;color:rgba(0, 0, 0, 0.99);display:block;font-family:inherit;font-size:1em;margin:0 0 0;padding:0.5em;transition:box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s;width:100%;}
+textarea{background-color:#fafafa;border:1px solid #979797;box-shadow:0 1px 2px rgba(0, 0, 0, 0.1) inset;color:rgba(0, 0, 0, 0.99);display:block;font-family:inherit;font-size:1em;margin:0 0 0;padding:0.5em;width:100%;transition:box-shadow 0.45s ease 0s, border-color 0.45s ease-in-out 0s;}
+input.wpcf7-submit{background-color:#fff;border-top:1px solid #94c0b4;border-left:1px solid #f94c0b4;border-right:1px solid #94c0b4;border-bottom:1px solid #94c0b4;color:#000;cursor:pointer;display:inline-block;font-family:inherit;font-size:24px;height:42px;line-height:42px;padding:0 25px;position:relative;text-align:center;text-decoration:none!important;transition:background-color 200ms ease-out 0s;}
+input.wpcf7-submit:hover{background-color:#94c0b4;color:#fff;text-decoration:none!important;}
+
+
+
+/* Mobile menu */
+.pop-menu{display: none;}
+.menu-mob{display: none;}
+
+.menu-mob{
+    background-color: #94c0b4;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    color: #fff;
+    font-size: 22px;
+}
+.btn-mob{
+	width: 34px;
+    height: 22px;
+    background-color: #94c0b4;
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-left: 3px solid #94c0b4;
+    border-right: 3px solid #94c0b4;
+    position: relative;
+}
+.btn-mob:before{
+	content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    top: 6px;
+    left: -1px;
+}
+
+.pop-menu{
+	background: #94c0b4;
+    width: 300px;
+    padding: 40px 20px 20px 20px;
+	position: fixed;
+    top: 0px;
+    right: -320px;
+	transition: all .3s;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.3);
+	z-index: 6;
+}
+.pop-menu-active{
+    right: 0px;
+}
+
+.content-menu-wrap {
+	position: relative;
+}
+.btn-cloused-wrap{
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	top: -30px;
+	right: -15px;
+}
+
+.content-menu ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+.content-menu ul a{
+	display: block;
+	background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    padding: 7px 10px;
+    margin-bottom: 3px;
+}
+
+.btn-cloused{
+	width: 20px;
+    height: 20px;
+	position: relative;
+	background: #94c0b4;
+	border: 0px;
+}
+.btn-cloused:before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    top: 0px;
+    left: 0px;
+    transform: rotate(45deg);
+}
+.btn-cloused:after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: #fff;
+    top: 0px;
+    left: 0px;
+    transform: rotate(-45deg);
+}
+
+.cont-menu{
+	display: flex;
+	justify-content: space-between;
+}
+.lang-menu{
+	margin-left: 30px;
+}
+.wpm-language-switcher{
+	display: flex;
+	align-items: center;
+}
+.wpm-language-switcher li{
+	margin-left: 10px;
+}
+.wpm-language-switcher a{
+	background-color: #6e7cbe;
+	text-decoration: none;
+}
+.wpm-language-switcher a span{
+	color: #fff;
+}
+
+
+@media (max-width:1200px){/* меньше 1200 пикселей */
+	.h-al{width:100%;}
+	.col-post img{width: 98%; height: auto;}
+}
+@media (max-width:992px){/* меньше 992 пикселей */
+	.h-ob{font-size:18px;}
+	.h-ob span{font-size:16px;}
+	.pop-menu{display: block;}
+	.menu-mob{display: flex; justify-content: flex-end;}
+	.menu-mob-span {margin-right: 10px;}
+}
+@media (max-width:768px){/* меньше 768 пикселей */
+	.col-logo img {width: 50%; height: auto; margin: 10px auto; }
+	.col-logo, .col-hcont, .h-al {text-align: center; padding: 0;}
+	.tel-head{display: inline-block;}
+	.cont-foot{padding: 0; text-align: center;}
+	.aligncenter{width: 100%; height: auto;}
+}
+@media (max-width:480px){/* меньше 480 пикселей */
+	.col-logo img {width: 96%; height: auto; margin: 10px auto 0; }
+	.tel-head li{width: 100%; text-align: center;}
+	.h-al{font-size: 40px;}
+	.kompany h1, .h1-page{font-size: 28px;}
+	.copyr-wp {flex-direction: column; gap: 10px;}
+}
+@media (max-width:320px){/* меньше 320 пикселей */
+	.h-al{font-size: 30px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
