@@ -1,0 +1,202 @@
+/* САЙДБАР ТОП */
+.sidebar-top {}
+.sidebar-vidget {
+	margin-bottom: 1.5rem;
+}
+.bl-hover {
+    overflow: hidden;
+    display: block;
+	margin-bottom: 1rem;
+}
+.bl-hover img {
+	display: block;
+	width: 100%;
+	height: auto;
+	-webkit-transition: all 1s ease-out;
+    -webkit-transform: scale(1.0);
+	position: relative;
+	z-index: 2;
+}
+.bl-hover:hover img {
+	-webkit-transform: scale(1.1);
+}
+
+/* САЙДБАР БОТТОМ */
+.sidebar-bott {}
+.vidget-cat-post {
+	margin-bottom: 1rem;
+}
+.vidget-partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки одинаковой ширины */
+    gap: 1rem; /* объединяет и row-gap, и column-gap */
+    align-items: start; /* выравнивание по вертикали, если надо */
+}
+.vidget-partners img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 0px;
+}
+
+/* РЕКЛАМА */
+.block-rekl-soc {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+	gap: 2rem;
+}
+
+
+
+
+/* Календарь */
+.calendar .reklama-img a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #911214;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+
+/* Шорткоды */
+
+/*
+ * Стили для кастомного баннера в статье (на CSS Grid)
+ */
+
+/* Общий контейнер баннера */
+.custom-post-banner {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 30px 0;
+    
+    /* --- Магия Grid начинается здесь --- */
+    display: grid;
+    /* Определяем две колонки: 150px для картинки и остальное место для контента */
+    grid-template-columns: 150px 1fr; 
+    /* Определяем области (зоны) для наших элементов */
+    grid-template-areas: "image content";
+    gap: 20px; /* Расстояние между колонками и строками */
+    align-items: center; /* Выравниваем по вертикали */
+}
+
+/* Назначаем каждому элементу его область */
+.banner-image { grid-area: image; }
+.banner-content { grid-area: content; }
+
+/* Стили для изображения (остаются почти такими же) */
+.banner-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+/* Стили для контента (заголовок, текст, кнопка) */
+.banner-title {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.banner-paragraph {
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.banner-button {
+    display: inline-block;
+    background-color: #008080;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.banner-button:hover {
+    background-color: #006666;
+}
+
+/* Блок с видеорекламой из шапки, для мобилы */
+.mobile-header-reclama {
+	display: none;
+}
+
+
+/* --- Адаптивность для мобильных устройств на Grid --- */
+/* Это именно то, что вы описывали! */
+@media (max-width: 767px) {
+    .custom-post-banner {
+        /* Полностью переопределяем нашу сетку для мобильных */
+        
+        /* Теперь у нас две колонки: авто-ширина для картинки и остальное для заголовка */
+        grid-template-columns: auto 1fr; 
+        
+        /* А вот здесь вся магия: мы полностью меняем раскладку! */
+        grid-template-areas: 
+            "image title"      /* Первая строка: картинка и заголовок */
+            "paragraph paragraph" /* Вторая строка: параграф занимает ОБЕ колонки */
+            "button button";      /* Третья строка: кнопка занимает ОБЕ колонки */
+        
+        /* Можно сделать отступ поменьше для мобильных */
+        gap: 15px; 
+    }
+
+    /* Нам нужно будет отдельно назначить новые области для дочерних элементов */
+    .banner-title { grid-area: title; }
+    .banner-paragraph { grid-area: paragraph; text-align: left; /* Возвращаем тексту нормальное выравнивание */ }
+    .banner-button { grid-area: button; justify-self: start; /* Выравниваем кнопку по левому краю */}
+
+    /* Можно сделать картинку поменьше */
+    .banner-image {
+      width: 80px;
+    }
+}
+
+
+
+
+
+/* ========== MOBILE ========== */
+
+@media (max-width: 1080px) {  
+	.block-rekl-soc {justify-content: center; flex-wrap: wrap; gap: 1rem;}
+	.block-rekl-soc .block-rekl {width: 100%;}
+	.vidget img {width: 100%; height: auto;}
+}
+@media (max-width: 820px) {
+	
+} 
+@media (max-width: 768px) {  
+	.block-rekl-soc {gap: 1rem; margin-bottom: 1rem;}
+}
+@media (max-width: 608px) {  
+	.block-faceb {width: 100%!important; text-align: center;}
+	.block-rekl-soc {padding: 0;}
+}
+@media (max-width: 530px) { 
+	.mobile-header-reclama {display: block;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
